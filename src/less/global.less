@@ -1,0 +1,97 @@
+/*公共模块*/
+
+//tab
+.tab {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    .headerbar {
+        background: @white;
+        .tabitem {
+            height: 3.08333rem;
+            border-bottom: 3px solid @gray*2.5;
+            &.selected {
+                border-bottom: 3px solid @cyan;
+                color: @cyan;
+            }
+        }
+    }
+}
+
+//弹出窗口
+.popbox {
+    background-color: rgba(0, 0, 0, .5);
+    .pf;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 101;
+    display: block;
+    .pop {
+        width: 19.4rem;
+        background: #fff;
+        .br;
+        position: absolute;
+        left: 50%;
+        margin-left: -11.2rem;
+        top: 9.25rem;
+        padding: 1.5rem;
+        .notice_ok {
+            display: block;
+            margin: 0 auto;
+            width: 3.91rem;
+            height: 3.91rem;
+            background-size: 100% 200%;
+            background-position: left top;
+        }
+        .notice_warning {
+            display: block;
+            margin: 0 auto;
+            width: 3.91rem;
+            height: 3.91rem;
+            background-size: 100% 200%;
+            background-position: left bottom;
+        }
+        h3 {
+            font-size: @fz-ll;
+            color: @cyan;
+            .lh-ll;
+        }
+    }
+}
+
+.dataLoading{
+    height:5rem;
+    // background-image: url(../images/dataloadingbbb.gif);
+    background-size:42/24rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.footerbar{
+  background: #fff;
+  height: 3.5rem;
+  -webkit-box-shadow: 0 -0.1rem 0.1rem rgba(226,226,226,.41);
+  -moz-box-shadow: 0 -0.1rem 0.1rem rgba(226,226,226,.41);
+  box-shadow: 0 -0.1rem 0.1rem rgba(226,226,226,.41);
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding-top:.5rem;
+}
+
+.tagproduct{
+  width: 129/24rem;
+  height: 134/24rem;
+  background-repeat: no-repeat;
+  background-size:100%;
+  right: 0;
+  top: 0;
+  position: absolute;
+}
+/*字符截取*/
+.txt_cut{text-overflow:ellipsis;overflow:hidden;white-space:nowrap}
+/*换行*/
+.ba{word-break:break-all}
